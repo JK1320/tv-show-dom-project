@@ -1,12 +1,66 @@
-#root {
-  width: 100%;
-  margin-left: 5%;
-  color: black;
+#main {
+  width: 90%;
 }
-/*
+
+#heading {
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+}
+
+#root {
+  width: 95%;
+  margin: 5%;
+  color: black;
+  background-color: chocolate;
+  padding: 2%;
+}
 #container {
   display: flex;
-  flex-flow: column wrap;
   justify-content: space-around;
+  flex-wrap: wrap; 
+  margin-left: 8%;
 }
-*/
+
+#episodesDiv {
+   margin-bottom: 2%;
+  width: 30%;
+  height: auto;
+  border: 3px solid blueviolet;
+  border-radius: 5%;
+  background-color: burlywood;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#title-div {
+  width: 90%;
+  border: 3px solid blueviolet;
+  border-radius: 5%;
+  background-color: rgb(135, 166, 222);
+  margin: 5%;
+  text-align: center;
+}
+
+#img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#filter {
+  padding: 1%;
+  font-size: 25px;
+}
+
+#select-input {
+  padding: 1%;
+  font-size: 25px;
+}
+
+#disclaimer {
+  text-align: center;
+  font-size: 12px;
+}
