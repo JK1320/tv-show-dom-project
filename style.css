@@ -1,5 +1,6 @@
 #main {
   width: 90%;
+   background-color: rgb(245, 228, 220);
 }
 
 #heading {
@@ -12,7 +13,7 @@
   margin: 5%;
   color: black;
   background-color: chocolate;
-  padding: 2%;
+  padding: 2%; 
 }
 #container {
   display: flex;
@@ -22,10 +23,11 @@
 }
 
 #episodesDiv {
-   margin-bottom: 2%;
-  width: 30%;
+  padding: 1%;
+  margin-bottom: 2%;
+  width: 40%;
   height: auto;
-  border: 3px solid blueviolet;
+  border: 3px solid rgb(128, 126, 129);
   border-radius: 5%;
   background-color: burlywood;
   box-shadow: 10px 10px 5px grey;
@@ -33,11 +35,12 @@
 
 #title-div {
   width: 90%;
-  border: 3px solid blueviolet;
+  border: 3px solid rgb(128, 126, 129);
   border-radius: 5%;
   background-color: rgb(135, 166, 222);
   margin: 5%;
   text-align: center;
+  font-size: 10px;
 }
 
 #img {
@@ -50,14 +53,28 @@
   margin-right: auto;
 }
 
+#level-500 {
+  background-color: rgb(240, 228, 228);
+}
+
 #filter {
-  padding: 1%;
-  font-size: 25px;
+  width: 10%;
+  font-size: 15px;
+}
+
+#shows {
+  width: 17%;
 }
 
 #select-input {
-  padding: 1%;
-  font-size: 25px;
+  width: 17%;
+  font-size: 15px;
+}
+
+#count-display {
+  margin-left: 80%;
+  font-size: 20px;
+  color: white;
 }
 
 #disclaimer {

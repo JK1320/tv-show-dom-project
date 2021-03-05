@@ -12,18 +12,23 @@
     <header>
       <h1 id="heading">TV Project</h1>
     </header>
-    
-      <div id="root">
-        <input type="text" id="filter" placeholder="search" />
-        <select id="select-input">
-          <option value="default" id="option">Select an episode</option>
-          <option id="episodes-option"></option>
-        </select>
-        <input id="" placeholder="Search"/>
-        <span id="count-display"></span>
-      </div>
-      <div id="container"></div>
-    
+  
+    <div id="root">
+      <!-- select for shows -->
+      <select id="shows">
+        <option value="default">Select a show</option>
+      </select>
+      <!-- select for episodes -->
+      <select id="select-input">
+        <option value="default" id="option">Select an episode</option>
+        <option id="episodes-option"></option>
+      </select>
+      <input type="text" id="search" placeholder="search for an episode" /> 
+      <input type="text" id="search-shows" placeholder="search for a show"/><br />
+      <span id="count-display"></span>
+      <a id="shows-nav" href="#">Shows Listing</a>
+    </div>
+    <div id="container"></div>
     
     <footer id="footer">
       <p id="disclaimer">
@@ -32,9 +37,10 @@
       </p>
     </footer>
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
+   <!---- <script src="episodes.js"></script> -->
 
     <!-- Loads YOUR javascript code -->
-    <script src="script.js"></script>
+    <script src="shows.js"></script>
+    <script src="script.js"></script>  
   </body>
 </html>
