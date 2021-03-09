@@ -1,22 +1,25 @@
 //You can edit ALL of the code here
-let input = document.getElementById("search");
-let container = document.getElementById("container");
-let select = document.getElementById("select-input")
-let option = document.getElementById("option");
-let episodesOption = document.getElementById("episodes-option")
-let rootDiv = document.getElementById("root");
-let countDisplay = document.getElementById("count-display");
-let showSelect = document.getElementById("shows");
-let showsNav = document.getElementById("shows-nav");
-let searchShows = document.getElementById("search-shows");
+const input = document.getElementById("search");
+const container = document.getElementById("container");
+const select = document.getElementById("episode-select")
+const option = document.getElementById("option");
+const episodesOption = document.getElementById("episodes-option")
+const rootDiv = document.getElementById("root");
+const countDisplay = document.getElementById("count-display");
+const showSelect = document.getElementById("shows");
+const showsNav = document.getElementById("shows-nav");
+const searchShows = document.getElementById("search-shows");
 let showOption;
 let showEpisodes = [];
 
 
 function setup() {
-  
+ 
   populateShowsDropDown();
   select.style.display = "none";
+  input.style.display = "none";
+  input.addEventListener("input", search);
+  searchShows.addEventListener("input", searchForShow);
 }
 
  // function to load all episodes
@@ -30,7 +33,7 @@ function makePageForEpisodes(episodeList) {
     <img id="img" src="${episode.image != null ? episode.image.medium : ''}"/> 
     ${episode.summary}<div id="level-500"> - Runtime: ${episode.runtime}</div></div>`;
 });
- input.style.display = "block"; 
+ input.style.display = "inline"; 
 }
 
 // function to load shows
@@ -62,8 +65,8 @@ function search(elem) {
   container.innerHTML = "";
   makePageForEpisodes(filteredEpisodes);
 }
-input.style.display = "none";
-input.addEventListener("input", search);
+
+
 
 
 // function to search for shows
@@ -81,7 +84,7 @@ function searchForShow(elem) {
  makePageForShows(filteredShows);
 }
 
-searchShows.addEventListener("input", searchForShow);
+
 
 
 
@@ -105,9 +108,6 @@ function populateEpisodesDropDown (episodes) {
       let selectedEpisode = showEpisodes.filter(episode => {
         return episode.id === parseInt(e.target.value);
       })
-      //console.log(showEpisodes)
-      //console.log(e.target.value)
-      //console.log(selectedEpisode)
       makePageForEpisodes(selectedEpisode);
     })
    
@@ -149,10 +149,10 @@ function populateShowsDropDown() {
        makePageForShows(allShows);
        input.style.display = "none";
        select.style.display = "none";
-       searchShows.style.display = "block";
+       searchShows.style.display = "inline";
      } else {
         fetchEpisodes(e.target.value)
-        select.style.display = "block";
+        select.style.display = "inline";
         searchShows.style.display = "none";
      }
       
@@ -164,7 +164,7 @@ showsNav.addEventListener("click", function(){
   showOption.innerHTML = "";
   input.style.display = "none";
   select.style.display = "none";
-  searchShows.style.display = "block";
+  searchShows.style.display = "inline";
   const allShows = getAllShows();
   allShows.sort(function(a, b) {
   return compareStrings(a.name, b.name);
