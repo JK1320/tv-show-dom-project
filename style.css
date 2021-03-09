@@ -1,11 +1,17 @@
 #main {
   width: 90%;
    background-color: rgb(245, 228, 220);
+   font-family: 'Roboto', sans-serif;
 }
 
 #heading {
   text-shadow: 2px 2px 4px #000000;
   text-align: center;
+  transition: 2s;
+}
+
+#heading:hover {
+color: chocolate;
 }
 
 #root {
@@ -26,26 +32,36 @@
   padding: 1%;
   margin-bottom: 2%;
   width: 40%;
-  height: auto;
-  border: 3px solid rgb(128, 126, 129);
+  height: 50%;
   border-radius: 5%;
   background-color: burlywood;
   box-shadow: 10px 10px 5px grey;
+  flex-shrink: 0;
+}
+
+#episodesDiv:hover {
+  background-color: rgb(224, 163, 82);
+  cursor: pointer;
 }
 
 #title-div {
   width: 90%;
-  border: 3px solid rgb(128, 126, 129);
+  padding: 1%;
   border-radius: 5%;
-  background-color: rgb(135, 166, 222);
+  background-color: rgb(159, 183, 226);
   margin: 5%;
   text-align: center;
   font-size: 10px;
 }
 
+#title-div:hover {
+  background-color: rgb(90, 138, 226);
+  color: white;
+}
+
 #img {
-  width: 100%;
-  height: auto;
+  width: 70%;
+  height: 5%;
   position: relative;
   align-items: center;
   display: block;
@@ -75,6 +91,15 @@
   margin-left: 80%;
   font-size: 20px;
   color: white;
+}
+
+#shows-nav {
+  text-decoration: none;
+  color: white;
+}
+
+#shows-nav:hover {
+  font-size: 20px;
 }
 
 #disclaimer {
