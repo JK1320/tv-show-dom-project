@@ -161,7 +161,7 @@ function populateShowsDropDown() {
 
 //nav link for shows list
 showsNav.addEventListener("click", function(){
-  showOption.innerHTML = "";
+  showSelect.selectedIndex = 0;
   input.style.display = "none";
   select.style.display = "none";
   searchShows.style.display = "inline";
