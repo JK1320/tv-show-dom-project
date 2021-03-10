@@ -1,3 +1,108 @@
+#main {
+  width: 90%;
+   background-color: rgb(245, 228, 220);
+   font-family: 'Roboto', sans-serif;
+}
+
+#heading {
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  transition: 2s;
+}
+
+#heading:hover {
+color: chocolate;
+}
+
 #root {
-  color: red;
+  width: 95%;
+  margin: 5%;
+  color: black;
+  background-color: chocolate;
+  padding: 2%; 
+}
+#container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  margin-left: 8%;
+}
+
+#episodesDiv {
+  padding: 1%;
+  margin-bottom: 2%;
+  width: 40%;
+  height: 50%;
+  border-radius: 5%;
+  background-color: burlywood;
+  box-shadow: 10px 10px 5px grey;
+  flex-shrink: 0;
+}
+
+#episodesDiv:hover {
+  background-color: rgb(224, 163, 82);
+  cursor: pointer;
+}
+
+#title-div {
+  width: 90%;
+  padding: 1%;
+  border-radius: 5%;
+  background-color: rgb(159, 183, 226);
+  margin: 5%;
+  text-align: center;
+  font-size: 10px;
+}
+
+#title-div:hover {
+  background-color: rgb(90, 138, 226);
+  color: white;
+}
+
+#img {
+  width: 70%;
+  height: 5%;
+  position: relative;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#level-500 {
+  background-color: rgb(240, 228, 228);
+}
+
+#filter {
+  width: 10%;
+  font-size: 15px;
+}
+
+#shows {
+  width: 17%;
+}
+
+#select-input {
+  width: 17%;
+  font-size: 15px;
+}
+
+#count-display {
+  margin-left: 80%;
+  font-size: 20px;
+  color: white;
+}
+
+#shows-nav {
+  text-decoration: none;
+  color: white;
+}
+
+#shows-nav:hover {
+  font-size: 20px;
+}
+
+#disclaimer {
+  text-align: center;
+  font-size: 12px;
 }

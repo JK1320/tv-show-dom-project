@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TV Show Project | Jasvir Kaur (JK1320)</title>
     <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
-  <body>
+  <body id="main">
+    <header>
+      <h1 id="heading">TV Project</h1>
+    </header>
+  
     <div id="root">
+      <!-- select for shows -->
+      <select id="shows">
+        <option value="default">Select a show</option>
+      </select>
+      <!-- select for episodes -->
+      <select id="episode-select">
+        <option value="default" id="option">Select an episode</option>
+        <option id="episodes-option"></option>
+      </select>
+      <input type="text" id="search" placeholder="search for an episode" /> 
+      <input type="text" id="search-shows" placeholder="search for a show"/><br />
+      <span id="count-display"></span>
+      <a id="shows-nav" href="#">Shows Listing</a>
     </div>
-
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
-
+    <div id="container"></div>
+    
+    <footer id="footer">
+      <p id="disclaimer">
+        Data used on this website is from
+        <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
+      </p>
+    </footer>
+    
     <!-- Loads YOUR javascript code -->
-    <script src="script.js"></script>
+    <script src="shows.js"></script>
+    <script src="script.js"></script>  
   </body>
 </html>
